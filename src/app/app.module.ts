@@ -21,10 +21,12 @@ import { MenuItemComponent } from "./restaurant-detail/menu-item/menu-item.compo
 import { ReviewsComponent } from "./restaurant-detail/reviews/reviews.component";
 import { OrderComponent } from './order/order.component';
 import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
 
 //SERVICES
 import { RestaurantService } from "./restaurants/restaurants.service";
 import { ShoppingCartService } from "./restaurant-detail/shopping-cart/shopping-cart.service";
+
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { ShoppingCartService } from "./restaurant-detail/shopping-cart/shopping-
     MenuItemComponent,
     ReviewsComponent,
     OrderComponent,
-    InputComponent
+    InputComponent,
+    RadioComponent
    ],
   imports: [BrowserModule, HttpModule, RouterModule.forRoot(ROUTES), FormsModule],
   providers: [RestaurantService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
